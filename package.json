@@ -7,7 +7,7 @@
         "node-red-dashboard": "3.1.7"
     },
     "scripts": {
-        "start": "node node_modules/node-red/red.js -D httpAdminRoot=false -D ui.path='/' flow.json"
+        "start": "node node_modules/node-red/red.js -D httpAdminRoot=false -D ui.path=/ flow.json"
     },
     "node-red": {
         "settings": {
