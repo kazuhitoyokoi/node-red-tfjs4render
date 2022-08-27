@@ -10,6 +10,7 @@
         "start": "node node_modules/node-red/red.js -D httpAdminRoot=false -D ui.path=/ flow.json"
     },
     "node-red": {
+        "version": ">=3.0.2",
         "settings": {
             "flowFile": "flow.json",
             "credentialsFile": "flow_cred.json"
