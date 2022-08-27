@@ -7,7 +7,7 @@
         "node-red-dashboard": "3.1.7"
     },
     "scripts": {
-        "start": "node node_modules/node-red/red.js"
+        "start": "node node_modules/node-red/red.js flow.json"
     },
     "node-red": {
         "settings": {
