@@ -2,7 +2,13 @@
     "name": "aws-test",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red": "3.0.2",
+        "node-red-dashboard": "3.1.7"
+    },
+    "scripts": {
+        "start": "node node_modules/node-red/red.js"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
