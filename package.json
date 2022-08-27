@@ -1,6 +1,6 @@
 {
     "name": "aws-test",
-    "description": "A Node-RED Project",
+    "description": "A Node-RED Project2",
     "version": "0.0.1",
     "dependencies": {
         "node-red": "3.0.2",

@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "2740abd646c5fc89",
-        "type": "ui_tab",
-        "name": "ホーム",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "423f68421f943f81",
         "type": "ui_base",
         "theme": {
@@ -113,6 +105,14 @@
         }
     },
     {
+        "id": "2740abd646c5fc89",
+        "type": "ui_tab",
+        "name": "ホーム",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "e55e00087577f366",
         "type": "ui_group",
         "name": "デフォルト",
@@ -122,6 +122,34 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "02636b6632690cf1",
+        "type": "ui_button",
+        "z": "7d4315397b0fba59",
+        "name": "",
+        "group": "e55e00087577f366",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "5d2d44c16293157a"
+            ]
+        ]
     },
     {
         "id": "5d2d44c16293157a",
@@ -161,38 +189,10 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 350,
+        "x": 390,
         "y": 200,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "02636b6632690cf1",
-        "type": "ui_button",
-        "z": "7d4315397b0fba59",
-        "name": "",
-        "group": "e55e00087577f366",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "5d2d44c16293157a"
-            ]
         ]
     }
 ]
