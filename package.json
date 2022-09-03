@@ -1,5 +1,5 @@
 {
-    "name": "aws-test",
+    "name": "node-red-tfjs4render",
     "description": "A Node-RED Project2",
     "version": "0.0.1",
     "engines": {
