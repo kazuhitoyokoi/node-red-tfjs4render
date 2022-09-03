@@ -1,10 +1,10 @@
 {
-  "engines": {
-    "node": ">=14.x"
-  },
   "name": "aws-test",
   "description": "A Node-RED Project2",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=14.x"
+  },
   "dependencies": {
     "node-red": ">=3.0.2",
     "node-red-dashboard": "3.1.7",
