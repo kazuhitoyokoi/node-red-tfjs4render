@@ -8,7 +8,7 @@
         "node-red-node-random": "0.4.0"
     },
     "scripts": {
-        "start": "node node_modules/node-red/red.js -D httpAdminRoot=false -D ui.path=/ flow.json"
+        "start": "node-red -D httpAdminRoot=false -D ui.path=/ flow.json"
     },
     "node-red": {
         "version": ">=3.0.2",
