@@ -324,7 +324,8 @@
         "y": 140,
         "wires": [
             [
-                "04513908b3c740dd"
+                "04513908b3c740dd",
+                "27e43eed4118a0b2"
             ]
         ]
     },
@@ -382,5 +383,22 @@
         "x": 510,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "27e43eed4118a0b2",
+        "type": "tensorflowCoco",
+        "z": "2a0f835b6a8e24e6",
+        "name": "",
+        "modelUrl": "http://localhost:1880/coco/model.json",
+        "scoreThreshold": 0.5,
+        "passthru": "false",
+        "lineColour": "magenta",
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "a3bd9973d9673094"
+            ]
+        ]
     }
 ]
