@@ -252,8 +252,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 540,
+        "x": 680,
+        "y": 520,
         "wires": []
     },
     {
@@ -268,7 +268,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 490,
+        "x": 470,
         "y": 540,
         "wires": [
             [
@@ -527,6 +527,16 @@
         "statusType": "auto",
         "x": 610,
         "y": 720,
+        "wires": []
+    },
+    {
+        "id": "afb285ea3cd1517c",
+        "type": "comment",
+        "z": "2a0f835b6a8e24e6",
+        "name": "",
+        "info": "",
+        "x": 240,
+        "y": 660,
         "wires": []
     }
 ]
