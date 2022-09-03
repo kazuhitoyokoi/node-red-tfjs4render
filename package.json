@@ -11,7 +11,8 @@
     "node-red-node-random": "0.4.0"
   },
   "scripts": {
-    "start": "node-red flow.json -D httpAdminRoot=false -D ui.path=/"
+    "start": "node-red flow.json -D httpAdminRoot=false -D ui.path=/",
+    "dev": "node-red flow.json"
   },
   "node-red": {
     "version": ">=3.0.2",
