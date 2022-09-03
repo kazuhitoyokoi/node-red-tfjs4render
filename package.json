@@ -8,9 +8,7 @@
     "dependencies": {
         "node-red": ">=3.0.2",
         "node-red-dashboard": "3.1.7",
-        "node-red-node-random": "0.4.0",
         "node-red-contrib-tensorflow": "0.2.2",
-        "@tensorflow/tfjs-backend-wasm": "2.8.6",
         "node-red-node-ui-webcam": "0.4.0"
     },
     "scripts": {
@@ -24,18 +22,5 @@
             "credentialsFile": "flow_cred.json"
         }
     },
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kazuhitoyokoi/aws-test.git"
-    },
-    "keywords": [
-        "hoge"
-    ],
-    "author": "hoge",
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/kazuhitoyokoi/aws-test/issues"
-    },
-    "homepage": "https://github.com/kazuhitoyokoi/aws-test#readme"
+    "license": "Apache-2.0"
 }
