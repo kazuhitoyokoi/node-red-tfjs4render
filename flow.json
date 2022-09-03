@@ -35,7 +35,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 140,
-        "y": 180,
+        "y": 360,
         "wires": [
             [
                 "7d60e38e1509f654"
@@ -54,7 +54,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 300,
+        "y": 360,
         "wires": [
             [
                 "64e6a3d418ed0704",
@@ -91,8 +91,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 180,
+        "x": 480,
+        "y": 340,
         "wires": []
     },
     {
@@ -137,7 +137,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 700,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -165,7 +165,7 @@
     {
         "id": "0604b54f871b4397",
         "type": "cocossd",
-        "z": "7d4315397b0fba59",
+        "z": "2a0f835b6a8e24e6",
         "name": "",
         "x": 340,
         "y": 140,
@@ -178,33 +178,9 @@
         ]
     },
     {
-        "id": "38ed41eebf507337",
-        "type": "ui_webcam",
-        "z": "7d4315397b0fba59",
-        "name": "",
-        "group": "ab397e95.29ebe",
-        "order": 1,
-        "width": 0,
-        "height": 5,
-        "countdown": false,
-        "autoStart": false,
-        "hideCaptureButton": false,
-        "showImage": "2",
-        "mirror": true,
-        "format": "png",
-        "x": 180,
-        "y": 140,
-        "wires": [
-            [
-                "0604b54f871b4397",
-                "04513908b3c740dd"
-            ]
-        ]
-    },
-    {
         "id": "715647cde3801c6b",
         "type": "change",
-        "z": "7d4315397b0fba59",
+        "z": "2a0f835b6a8e24e6",
         "name": "",
         "rules": [
             {
@@ -231,7 +207,7 @@
     {
         "id": "a3bd9973d9673094",
         "type": "ui_text",
-        "z": "7d4315397b0fba59",
+        "z": "2a0f835b6a8e24e6",
         "group": "ab397e95.29ebe",
         "order": 2,
         "width": 0,
@@ -248,7 +224,7 @@
     {
         "id": "04513908b3c740dd",
         "type": "ui_toast",
-        "z": "7d4315397b0fba59",
+        "z": "2a0f835b6a8e24e6",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -267,7 +243,7 @@
     {
         "id": "0c248737fed903b9",
         "type": "ui_toast",
-        "z": "7d4315397b0fba59",
+        "z": "2a0f835b6a8e24e6",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -282,5 +258,29 @@
         "x": 530,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "38ed41eebf507337",
+        "type": "ui_webcam",
+        "z": "2a0f835b6a8e24e6",
+        "name": "",
+        "group": "ab397e95.29ebe",
+        "order": 1,
+        "width": 0,
+        "height": 5,
+        "countdown": false,
+        "autoStart": false,
+        "hideCaptureButton": false,
+        "showImage": "2",
+        "mirror": true,
+        "format": "png",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "0604b54f871b4397",
+                "04513908b3c740dd"
+            ]
+        ]
     }
 ]
