@@ -14,14 +14,6 @@
         ]
     },
     {
-        "id": "edb24e1b448fb5ad",
-        "type": "ui_tab",
-        "name": "ホーム",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "d56417a6b9cb0751",
         "type": "ui_base",
         "theme": {
@@ -117,6 +109,14 @@
                 "py": 0
             }
         }
+    },
+    {
+        "id": "edb24e1b448fb5ad",
+        "type": "ui_tab",
+        "name": "ホーム",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "9cd668a3785bd32f",
@@ -279,21 +279,6 @@
         ]
     },
     {
-        "id": "0604b54f871b4397",
-        "type": "cocossd",
-        "z": "2a0f835b6a8e24e6",
-        "name": "",
-        "x": 340,
-        "y": 140,
-        "wires": [
-            [
-                "715647cde3801c6b",
-                "a3bd9973d9673094",
-                "0c248737fed903b9"
-            ]
-        ]
-    },
-    {
         "id": "715647cde3801c6b",
         "type": "change",
         "z": "2a0f835b6a8e24e6",
@@ -321,21 +306,27 @@
         ]
     },
     {
-        "id": "a3bd9973d9673094",
-        "type": "ui_text",
+        "id": "38ed41eebf507337",
+        "type": "ui_webcam",
         "z": "2a0f835b6a8e24e6",
-        "group": "9cd668a3785bd32f",
-        "order": 2,
-        "width": 0,
-        "height": 0,
         "name": "",
-        "label": "result:",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 510,
+        "group": "9cd668a3785bd32f",
+        "order": 1,
+        "width": 0,
+        "height": 5,
+        "countdown": false,
+        "autoStart": true,
+        "hideCaptureButton": false,
+        "showImage": "2",
+        "mirror": true,
+        "format": "png",
+        "x": 180,
         "y": 140,
-        "wires": []
+        "wires": [
+            [
+                "04513908b3c740dd"
+            ]
+        ]
     },
     {
         "id": "04513908b3c740dd",
@@ -376,27 +367,20 @@
         "wires": []
     },
     {
-        "id": "38ed41eebf507337",
-        "type": "ui_webcam",
+        "id": "a3bd9973d9673094",
+        "type": "ui_text",
         "z": "2a0f835b6a8e24e6",
-        "name": "",
         "group": "9cd668a3785bd32f",
-        "order": 1,
+        "order": 2,
         "width": 0,
-        "height": 5,
-        "countdown": false,
-        "autoStart": true,
-        "hideCaptureButton": false,
-        "showImage": "2",
-        "mirror": true,
-        "format": "png",
-        "x": 180,
+        "height": 0,
+        "name": "",
+        "label": "result:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 510,
         "y": 140,
-        "wires": [
-            [
-                "0604b54f871b4397",
-                "04513908b3c740dd"
-            ]
-        ]
+        "wires": []
     }
 ]
