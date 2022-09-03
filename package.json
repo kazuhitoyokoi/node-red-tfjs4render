@@ -1,6 +1,6 @@
 {
     "engines": {
-    "node": "1.x"
+    "node": ">=14.x"
   },
   "name": "aws-test",
   "description": "A Node-RED Project2",
