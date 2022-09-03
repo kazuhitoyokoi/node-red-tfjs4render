@@ -111,23 +111,23 @@
         }
     },
     {
-        "id": "edb24e1b448fb5ad",
-        "type": "ui_tab",
-        "name": "ホーム",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "9cd668a3785bd32f",
         "type": "ui_group",
         "name": "デフォルト",
-        "tab": "edb24e1b448fb5ad",
+        "tab": "a7a2f29526d4dc43",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "a7a2f29526d4dc43",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "b2df9dfabfcfb792",
@@ -306,28 +306,36 @@
         ]
     },
     {
-        "id": "38ed41eebf507337",
-        "type": "ui_webcam",
+        "id": "48201ee5a0608fa8",
+        "type": "cocossd",
         "z": "2a0f835b6a8e24e6",
         "name": "",
-        "group": "9cd668a3785bd32f",
-        "order": 1,
-        "width": 0,
-        "height": 5,
-        "countdown": false,
-        "autoStart": true,
-        "hideCaptureButton": false,
-        "showImage": "2",
-        "mirror": true,
-        "format": "png",
-        "x": 180,
+        "x": 360,
         "y": 140,
         "wires": [
             [
-                "04513908b3c740dd",
-                "48201ee5a0608fa8"
+                "a3bd9973d9673094",
+                "0c248737fed903b9",
+                "715647cde3801c6b"
             ]
         ]
+    },
+    {
+        "id": "a3bd9973d9673094",
+        "type": "ui_text",
+        "z": "2a0f835b6a8e24e6",
+        "group": "9cd668a3785bd32f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "result:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 140,
+        "wires": []
     },
     {
         "id": "04513908b3c740dd",
@@ -368,35 +376,157 @@
         "wires": []
     },
     {
-        "id": "a3bd9973d9673094",
-        "type": "ui_text",
+        "id": "38ed41eebf507337",
+        "type": "ui_webcam",
         "z": "2a0f835b6a8e24e6",
+        "name": "",
         "group": "9cd668a3785bd32f",
-        "order": 2,
+        "order": 1,
         "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "result:",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 510,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "48201ee5a0608fa8",
-        "type": "cocossd",
-        "z": "2a0f835b6a8e24e6",
-        "name": "",
-        "x": 360,
+        "height": 5,
+        "countdown": false,
+        "autoStart": true,
+        "hideCaptureButton": false,
+        "showImage": "2",
+        "mirror": true,
+        "format": "png",
+        "x": 180,
         "y": 140,
         "wires": [
             [
-                "a3bd9973d9673094",
-                "0c248737fed903b9",
-                "715647cde3801c6b"
+                "04513908b3c740dd",
+                "48201ee5a0608fa8"
             ]
         ]
+    },
+    {
+        "id": "f9f5a9a1c4fa4de8",
+        "type": "inject",
+        "z": "2a0f835b6a8e24e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 780,
+        "wires": [
+            [
+                "14ae56dc99730462"
+            ]
+        ]
+    },
+    {
+        "id": "14ae56dc99730462",
+        "type": "function",
+        "z": "2a0f835b6a8e24e6",
+        "name": "findLast()",
+        "func": "var tmp = [22.2, 33.3, 44.4, 55.5];\nmsg.payload = tmp.findLast(function (value) {\n    return value < 45.1;\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 780,
+        "wires": [
+            [
+                "bbd8431d352557e5"
+            ]
+        ]
+    },
+    {
+        "id": "bbd8431d352557e5",
+        "type": "debug",
+        "z": "2a0f835b6a8e24e6",
+        "name": "findLast()",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "21454b12458fe917",
+        "type": "inject",
+        "z": "2a0f835b6a8e24e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 720,
+        "wires": [
+            [
+                "11dd165dd115bf9e"
+            ]
+        ]
+    },
+    {
+        "id": "11dd165dd115bf9e",
+        "type": "function",
+        "z": "2a0f835b6a8e24e6",
+        "name": "find()",
+        "func": "var tmp = [22.2, 33.3, 44.4, 55.5];\nmsg.payload = tmp.find(function (value) {\n    return value < 45.1;\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 720,
+        "wires": [
+            [
+                "b3ca122af4f7acd1"
+            ]
+        ]
+    },
+    {
+        "id": "b3ca122af4f7acd1",
+        "type": "debug",
+        "z": "2a0f835b6a8e24e6",
+        "name": "find()",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 720,
+        "wires": []
     }
 ]
