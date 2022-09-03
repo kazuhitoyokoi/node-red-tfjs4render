@@ -2,13 +2,20 @@
     "name": "aws-test",
     "description": "A Node-RED Project2",
     "version": "0.0.1",
+    "engines": {
+        "node": ">=18.x"
+    },
     "dependencies": {
-        "node-red": "3.0.2",
+        "node-red": ">=3.0.2",
         "node-red-dashboard": "3.1.7",
-        "node-red-node-random": "0.4.0"
+        "node-red-node-random": "0.4.0",
+        "node-red-contrib-tensorflow": "0.2.2",
+        "@tensorflow/tfjs-backend-wasm": "2.8.6",
+        "node-red-node-ui-webcam": "0.4.0"
     },
     "scripts": {
-        "start": "node node_modules/node-red/red.js -D httpAdminRoot=false -D ui.path=/ flow.json"
+        "start": "node-red flow.json -D httpAdminRoot=false -D ui.path=/",
+        "dev": "node-red flow.json"
     },
     "node-red": {
         "version": ">=3.0.2",
@@ -16,5 +23,19 @@
             "flowFile": "flow.json",
             "credentialsFile": "flow_cred.json"
         }
-    }
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kazuhitoyokoi/aws-test.git"
+    },
+    "keywords": [
+        "hoge"
+    ],
+    "author": "hoge",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/kazuhitoyokoi/aws-test/issues"
+    },
+    "homepage": "https://github.com/kazuhitoyokoi/aws-test#readme"
 }
