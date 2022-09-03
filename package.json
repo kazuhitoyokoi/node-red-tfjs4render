@@ -1,4 +1,7 @@
 {
+    "engines": {
+    "node": "1.x"
+  },
   "name": "aws-test",
   "description": "A Node-RED Project2",
   "version": "0.0.1",
