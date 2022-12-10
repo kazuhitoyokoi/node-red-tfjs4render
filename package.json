@@ -3,7 +3,7 @@
     "description": "A Node-RED Project3",
     "version": "0.0.1",
     "engines": {
-        "node": ">=18.x"
+        "node": ">=16.x"
     },
     "dependencies": {
         "node-red": ">=3.0.2",
