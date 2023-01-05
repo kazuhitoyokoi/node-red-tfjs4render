@@ -133,7 +133,7 @@
         "id": "715647cde3801c6b",
         "type": "change",
         "z": "2a0f835b6a8e24e6",
-        "name": "",
+        "name": "set annotated image",
         "rules": [
             {
                 "t": "set",
