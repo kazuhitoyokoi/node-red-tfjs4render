@@ -2,7 +2,7 @@
     {
         "id": "2a0f835b6a8e24e6",
         "type": "tab",
-        "label": "フロー 1",
+        "label": "Flow 1",
         "disabled": false,
         "info": "",
         "env": [
@@ -148,7 +148,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
+        "x": 240,
         "y": 180,
         "wires": [
             [
@@ -161,7 +161,7 @@
         "type": "cocossd",
         "z": "2a0f835b6a8e24e6",
         "name": "",
-        "x": 300,
+        "x": 320,
         "y": 100,
         "wires": [
             [
@@ -183,7 +183,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 450,
+        "x": 490,
         "y": 100,
         "wires": []
     },
