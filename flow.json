@@ -209,5 +209,15 @@
                 "48201ee5a0608fa8"
             ]
         ]
+    },
+    {
+        "id": "df7764ba3ccbdf52",
+        "type": "comment",
+        "z": "2a0f835b6a8e24e6",
+        "name": "sudo raspi-config",
+        "info": "",
+        "x": 320,
+        "y": 440,
+        "wires": []
     }
 ]
