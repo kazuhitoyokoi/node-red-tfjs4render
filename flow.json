@@ -148,7 +148,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 240,
+        "x": 220,
         "y": 180,
         "wires": [
             [
@@ -161,7 +161,7 @@
         "type": "cocossd",
         "z": "2a0f835b6a8e24e6",
         "name": "",
-        "x": 320,
+        "x": 300,
         "y": 100,
         "wires": [
             [
@@ -183,7 +183,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 490,
+        "x": 450,
         "y": 100,
         "wires": []
     },
