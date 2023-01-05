@@ -92,7 +92,7 @@
             }
         },
         "site": {
-            "name": "Node-RED ダッシュボード",
+            "name": "",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
