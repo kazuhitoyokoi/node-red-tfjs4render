@@ -148,8 +148,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 240,
+        "x": 240,
+        "y": 180,
         "wires": [
             [
                 "38ed41eebf507337"
@@ -161,14 +161,12 @@
         "type": "cocossd",
         "z": "2a0f835b6a8e24e6",
         "name": "",
-        "x": 360,
-        "y": 140,
+        "x": 320,
+        "y": 100,
         "wires": [
             [
                 "a3bd9973d9673094",
-                "0c248737fed903b9",
-                "715647cde3801c6b",
-                "3662f756b46884e2"
+                "715647cde3801c6b"
             ]
         ]
     },
@@ -181,50 +179,12 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "hogeohgoe:",
+        "label": "result:",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 550,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "04513908b3c740dd",
-        "type": "ui_toast",
-        "z": "2a0f835b6a8e24e6",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 210,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "0c248737fed903b9",
-        "type": "ui_toast",
-        "z": "2a0f835b6a8e24e6",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 530,
-        "y": 80,
+        "x": 490,
+        "y": 100,
         "wires": []
     },
     {
@@ -242,46 +202,12 @@
         "showImage": "2",
         "mirror": true,
         "format": "png",
-        "x": 180,
-        "y": 140,
+        "x": 160,
+        "y": 100,
         "wires": [
             [
-                "04513908b3c740dd",
-                "48201ee5a0608fa8",
-                "c216a105a3203643"
+                "48201ee5a0608fa8"
             ]
         ]
-    },
-    {
-        "id": "c216a105a3203643",
-        "type": "debug",
-        "z": "2a0f835b6a8e24e6",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 200,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "3662f756b46884e2",
-        "type": "debug",
-        "z": "2a0f835b6a8e24e6",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 300,
-        "wires": []
     }
 ]
